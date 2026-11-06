@@ -1,0 +1,52 @@
+{
+  "name": "ninjaone",
+  "version": "0.1.0",
+  "description": "Unofficial TypeScript client for the NinjaOne / NinjaRMM APIs",
+  "author": "Pasquale 'sid' Fiorillo",
+  "license": "MIT",
+  "homepage": "https://github.com/siddolo/libninjaone#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/siddolo/libninjaone.git",
+    "directory": "packages/javascript"
+  },
+  "bugs": {
+    "url": "https://github.com/siddolo/libninjaone/issues"
+  },
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "generate": "node scripts/generate.mjs",
+    "build": "node scripts/build.mjs",
+    "typecheck": "tsc -p tsconfig.test.json",
+    "test": "npm run build && npm run typecheck && node --test tests/*.test.mjs",
+    "prepack": "npm run build"
+  },
+  "keywords": [
+    "ninjaone",
+    "ninjarmm",
+    "sdk",
+    "api-client",
+    "typescript"
+  ],
+  "devDependencies": {
+    "openapi-typescript": "^7.13.0",
+    "typescript": "^5.9.3"
+  }
+}

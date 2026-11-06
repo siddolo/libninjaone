@@ -1,0 +1,3 @@
+Source: https://app.ninjarmm.com/apidocs/NinjaRMM-API-v2.json
+Retrieved: 2026-11-06
+SHA256: 5ce571d1bb71f55fae52daf3fcb41fc0b3e1408f7693137520b02e6d45bded1f
